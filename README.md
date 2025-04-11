@@ -1,59 +1,107 @@
-# Build applications with GitHub Copilot agent mode
+# 🏋️‍♂️ Octofit Tracker App
 
-<!-- ![](https://github.com/vikkyfury/Octofit_tracker_app/actions/workflows/0-start-course.yml/badge.svg?branch=main) -->
-<img src="https://github.com/user-attachments/assets/8c45e716-1d95-473b-8923-dbbbf0f924b2" alt="octofit-tracker-app" width="30%" height="30%"/>
-
-_Build an application with GitHub Copilot agent mode in less than an hour._
-
-## Welcome
-
-People love how GitHub Copilot helps them write code faster and with fewer errors.
-But what if GitHub could create a full stack application for your job role based on requirements
-written in natural language.
-In this exercise, we will prompt GitHub Copilot agent mode to create us a complete application.
-
-- **Who is this for**: Intermediate developers familiar with GitHub Copilot, basic GitHub, and basic web development
-- **What you'll learn**: We'll introduce GitHub Copilot agent mode and how to use it for application development.
-- **What you'll build**: You'll use GitHub Copilot agent mode to create a fitness application as the gym teacher of a high school.
-- **How long**: This course takes less than one hour to complete.
-
-In this exercise, you will:
-
-1. Start up a preconfigured development environment for making a full stack application.
-2. Prompt in GitHub Copilot Chat and select the edit tab and select agent mode from the edit/agent drop down.
-3. Try creating the application with GPT-4o.
-4. Try other LLM models to see other output.
-
-### How to start this exercise
-
-1. Right-click **Copy Exercise** and open the link in a new tab.
-
-   <a id="copy-exercise">
-      <img src="https://img.shields.io/badge/📠_Copy_Exercise-AAA" height="25pt"/>
-   </a>
-
-2. In the new tab, most of the fields will automatically fill in for you.
-
-   - For owner, choose your personal account or an organization to host the repository.
-   - We recommend creating a public repository, as private repositories will use [Actions minutes](https://docs.github.chttps://github.com/vikkyfury/Octofit_tracker_app/billing/managing-billing-for-github-actions/about-billing-for-github-actions).
-   - Scroll down and click the **Create repository** button at the bottom of the form.
-
-3. After your new repository is created, wait about 20 seconds for the exercise to be prepared and buttons updated. You will continue working from your copy of the exercise.
-
-   - The **Copy Exercise** button will deactivate, changing to gray.
-   - The **Start Exercise** button will activate, changing to green.
-   - You will likely need to refresh the page.
-
-4. Click **Start Exercise**. Follow the step-by-step instructions and feedback will be provided as you progress.
-
-   <a id="start-exercise" href="https://github.com/vikkyfury/Octofit_tracker_app/issues/1">
-      <img src="https://img.shields.io/badge/🚀_Start_Exercise-008000" height="25pt"/>
-   </a>
-
-> ❕ **Important:** The **Start Exercise** button will activate after copying the repository. You will probably need to refresh the page.
+Welcome to the **Octofit Tracker App** — a comprehensive full-stack fitness tracking application designed and developed from the ground up using **GitHub Copilot's Agent Mode**. This project showcases the capabilities of AI-assisted development in creating robust applications efficiently.
 
 ---
 
-[Review the GitHub status page](https://www.githubstatus.com/)
+## 📋 Table of Contents
 
-&copy; 2025 GitHub &bull; [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) &bull; [MIT License](https://gh.io/mit)
+- [Overview](#overview)
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Setup Instructions](#setup-instructions)
+- [Application Structure](#application-structure)
+
+
+---
+
+## 📖 Overview
+
+The Octofit Tracker App is tailored for high school gym teachers to monitor and manage students' fitness activities. Leveraging GitHub Copilot's agent mode, the application was developed by providing natural language prompts, allowing the AI to generate and refine code iteratively.
+
+---
+
+## ✨ Features
+
+- **User Authentication**: Secure login and registration functionalities.  
+- **Workout Logging**: Users can record various fitness activities.  
+- **Progress Tracking**: Visual representations of fitness progress over time.  
+- **Admin Dashboard**: Gym teachers can view and manage student data.  
+- **Responsive Design**: Ensures usability across devices.  
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend**: React.js, Tailwind CSS  
+- **Backend**: Python, FastAPI  
+- **Database**: MongoDB  
+- **Development Tools**: GitHub Copilot (Agent Mode), Visual Studio Code, GitHub Codespaces  
+
+---
+
+## 🚀 Setup Instructions
+
+### 🔹 Clone the Repository
+```bash
+git clone https://github.com/vikkyfury/Octofit_tracker_app.git
+cd Octofit_tracker_app
+```
+
+### 🔹 Backend Setup
+```bash
+cd octofit-tracker/backend
+python -m venv venv
+
+# Activate the virtual environment
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run the FastAPI server
+uvicorn main:app --reload
+
+```
+### 🔹 Frontend Setup
+```bash
+cd ../frontend
+
+# Install frontend dependencies
+npm install
+
+# Start the development server
+npm run dev
+```
+
+###🔹 Access the App
+```bash
+Frontend: http://localhost:3000
+
+Backend API: http://localhost:8000
+```
+
+## 📁 Project Structure
+```bash
+Octofit_tracker_app/
+├── octofit-tracker/
+│   ├── backend/
+│   │   ├── main.py
+│   │   ├── requirements.txt
+│   │   └── ...additional backend files
+│   └── frontend/
+│       ├── package.json
+│       ├── tailwind.config.js
+│       └── ...additional frontend files
+├── docs/
+│   ├── mona-high-school-fitness-tracker.md
+│   └── octofit_story.md
+├── .devcontainer/
+├── .vscode/
+├── .github/
+├── LICENSE
+└── README.md
+```
+
+
+
