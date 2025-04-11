@@ -1,6 +1,7 @@
 # 🏋️‍♂️ Octofit Tracker App
 
-Welcome to the **Octofit Tracker App** — a comprehensive full-stack fitness tracking application designed and developed from the ground up using **GitHub Copilot's Agent Mode**. This project showcases the capabilities of AI-assisted development in creating robust applications efficiently.
+The **Octofit Tracker App** is a comprehensive full-stack fitness tracking application built to help gym teachers manage and monitor student fitness activities. The application provides user-friendly tools for logging workouts, tracking progress, and administering fitness programs in a high school setting.
+
 
 ---
 
@@ -17,7 +18,7 @@ Welcome to the **Octofit Tracker App** — a comprehensive full-stack fitness tr
 
 ## 📖 Overview
 
-The Octofit Tracker App is tailored for high school gym teachers to monitor and manage students' fitness activities. Leveraging GitHub Copilot's agent mode, the application was developed by providing natural language prompts, allowing the AI to generate and refine code iteratively.
+The Octofit Tracker App provides gym instructors with a complete toolset to manage student fitness goals. It supports logging workouts, monitoring trends, and visualizing performance, all within a responsive and modern interface.
 
 ---
 
@@ -36,7 +37,7 @@ The Octofit Tracker App is tailored for high school gym teachers to monitor and 
 - **Frontend**: React.js, Tailwind CSS  
 - **Backend**: Python, FastAPI  
 - **Database**: MongoDB  
-- **Development Tools**: GitHub Copilot (Agent Mode), Visual Studio Code, GitHub Codespaces  
+- **Development Tools**: Visual Studio Code, GitHub Codespaces  
 
 ---
 
